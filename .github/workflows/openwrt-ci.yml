@@ -44,6 +44,7 @@ jobs:
           cd openwrt-packages
           git clone https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk.git package/mentohust
           git clone https://github.com/BoringCat/luci-app-mentohust.git package/luci-app-mentohust
+          git clone https://github.com/maxlicheng/luci-app-ssr-plus.git package/luci-app-ssr-plus
       
       - name: Update feeds
         run: |
@@ -143,6 +144,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-wrtbwmon=y
           CONFIG_PACKAGE_luci-app-mentohust=y
           CONFIG_PACKAGE_luci-app-nft-qos=y
+          CONFIG_PACKAGE_luci-app-ssr-plus=y
           EOF
           # LuCI主题:
           cat >> .config <<EOF
