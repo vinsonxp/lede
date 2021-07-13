@@ -44,7 +44,7 @@ jobs:
           cd openwrt-packages
           git clone https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk.git package/mentohust
           git clone https://github.com/BoringCat/luci-app-mentohust.git package/luci-app-mentohust
-          git clone https://github.com/kitdy/luci-app-ssr-plus.git
+          git clone https://github.com/vinsonxp/luci-app-ssr-plus.git package/luci-app-ssr-plus
           
           
       
